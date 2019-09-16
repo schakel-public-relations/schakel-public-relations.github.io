@@ -18,22 +18,39 @@ export default class Layout extends React.Component {
             }
         }
         `}
-            render={data => <div className='container'>
-                <ul className='sample-nav'>
-                    <li><Link to='/'>Leer ons kennen</Link></li>
-                    <li><Link to='/cases/'>Cases</Link></li>
-                    <li><Link to='/'>Onze mensen</Link></li>
-                    <li><Link to='/'>Contact</Link></li>
-                </ul>
-                <Link to='/'>
-                    <h1 className='header'>{data.site.siteMetadata.title}</h1>
-                </Link>
+            render={
+                data => <div className='container'>
 
-                <div className='content'>
-                    {this.props.children}
+                    <nav className='navbar navbar-expand-sm my-navbar'>
+
+                        <ul className='navbar-nav'>
+                            <li className='navbar-item'>
+                                <Link className='nav-link' to='/'>Leer ons kennen</Link>
+                            </li>
+                            <li className='navbar-item'>
+                                <Link className='nav-link' to='/cases/'>Cases</Link>
+                            </li>
+                            <li className='navbar-item'>
+                                <Link className='nav-link' to='/'>Onze mensen</Link>
+                            </li>
+                            <li className='navbar-item'>
+                                <Link className='nav-link' to='/'>Contact</Link>
+                            </li>
+                        </ul>
+
+                        <Link className='navbar-brand my-brand' to='/'>
+                           <img className='img-logo' src='/logo.jpg' alt='logo'/>
+                        </Link>
+
+                    </nav>
+
+
+                    <div className='content'>
+                        {this.props.children}
+                    </div>
+
                 </div>
-
-            </div>}
+            }
         />
     }
 }

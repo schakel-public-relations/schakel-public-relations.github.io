@@ -1,26 +1,51 @@
-.container {
+* {
+    box-sizing: border-box;
+    transition:all 0.3s ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Site container and content*/
+.my-container {
     margin: 3% 10%;
     min-width: 600px ;
-}
-
-.content {
-    padding-top : 3%;
-    margin: 3% 10%;
-}
-
-.header {
-    display: inline;
-    margin-right: 0%;
+    height: auto;
     
 }
 
-.sample-nav {
-    list-style: none;
-    float: left;
+section {
+    margin-bottom: 200px;
 }
 
-.sample-nav li {
-    float: left;
-    margin-left: 30px;
+.content {
+    /* border: 2px solid blue; */
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
+
+/*navbar*/
+.img-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px;
+   
+}
+
+.my-navbar {
+    border-bottom: 2px solid orange;
+}
+
+.my-navbar a {
+    box-shadow: none;
+}
+
+.my-brand {
+    margin-left: 10%;
+}
+
+
 

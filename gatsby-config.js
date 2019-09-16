@@ -57,6 +57,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+   
   ],
   /*End plugin section */
 
