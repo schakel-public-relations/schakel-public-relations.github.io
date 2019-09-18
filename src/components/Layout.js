@@ -25,16 +25,16 @@ export default class Layout extends React.Component {
 
                         <ul className='navbar-nav'>
                             <li className='navbar-item'>
-                                <Link className='nav-link' to='/'>Leer ons kennen</Link>
+                                <Link className='nav-link' to='/#about'>Leer ons kennen</Link>
                             </li>
                             <li className='navbar-item'>
                                 <Link className='nav-link' to='/cases/'>Cases</Link>
                             </li>
                             <li className='navbar-item'>
-                                <Link className='nav-link' to='/'>Onze mensen</Link>
+                                <Link className='nav-link' to='/#people'>Onze mensen</Link>
                             </li>
                             <li className='navbar-item'>
-                                <Link className='nav-link' to='/'>Contact</Link>
+                                <Link className='nav-link' to='/#contact'>Contact</Link>
                             </li>
                         </ul>
 

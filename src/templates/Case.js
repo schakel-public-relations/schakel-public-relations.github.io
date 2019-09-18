@@ -3,20 +3,24 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export default class Case extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
 
-    render() {
-        const post = this.props.data.markdownRemark
-        return <Layout>
-        <div>
-            <h1>{post.frontmatter.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
+  render() {
+    const post = this.props.data.markdownRemark
+    return <Layout>
+      <div>
+        <p className='case-title underline'>
+          <h1>{post.frontmatter.title}</h1>
+          <h5>Geschreven door <i>{post.frontmatter.author}</i> op <i>{post.frontmatter.date}</i></h5>
+        </p>
+
+        <div className='post' dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
     </Layout>
-    }
+  }
 }
 
 export const query = graphql`
@@ -25,6 +29,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
+        date
       }
     }
   }

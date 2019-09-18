@@ -8,6 +8,14 @@ body {
     padding: 0;
 }
 
+.schakel-theme {
+    color: orange;
+}
+
+.xlg-text {
+    font-size: 350%;
+}
+
 /*Site container and content*/
 .my-container {
     margin: 3% 10%;
@@ -16,8 +24,13 @@ body {
     
 }
 
+.img-main {
+    width: 100%;
+    height: 150%;
+}
+
 section {
-    margin-bottom: 200px;
+    margin-bottom: 500px;
 }
 
 .content {
@@ -28,6 +41,7 @@ section {
 }
 
 /*navbar*/
+
 .img-logo {
     max-width: 100%;
     height: auto;
@@ -35,8 +49,13 @@ section {
    
 }
 
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
 .my-navbar {
     border-bottom: 2px solid orange;
+    color: black;
 }
 
 .my-navbar a {
@@ -47,5 +66,154 @@ section {
     margin-left: 10%;
 }
 
+/*Section styles*/
+#about {
+    background-color: rgba(231, 229, 229, 0.479);
+    border-radius: 4%;
+}
+.about {
+    /* border: 2px solid red; */
+    min-width: 380px;
+    max-width: 80%;
+    padding:80px 50px 80px 50px;
+  
+}
+
+.my-modal {
+    position: fixed;
+    top: 0%;
+    
+    width: 100%;
+    
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    padding-bottom: 100%;
+  }
+
+.profile-img {
+    width: 100%;
+    border-radius: calc(.25rem - 1px);
+}
 
 
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .socials {
+       text-align: center;
+  }
+
+  .contact-info {
+      background-color: black;
+      color: white;
+      height: 100%;
+      padding: 60px;
+      margin: 10px;
+  }
+
+  .underline {
+      border-bottom: 1px solid orange;
+  }
+
+  .our-work {
+      background-color: orange;
+      color: white;
+      height: 100%;
+      min-height: 300px;
+      margin-top: 80px;
+      padding: 60px; 
+  }
+
+  .my-btn {
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 10%;
+      background-color: transparent;
+      font-size: 2em;
+  }
+
+  .my-btn:hover {
+      background-color: rgb(250, 194, 91);
+      box-shadow: 5px 5px rgba(42, 41, 41, 0.76);
+      
+  }
+
+  .last-project {
+      background-color: rgb(175, 173, 173);
+      color: white;
+      height: 100%;
+      min-height: 300px;
+      margin-top: 80px;
+      padding: 60px; 
+  }
+
+  .last-project p {
+      border: 2px solid white;
+      margin: 30px 0px 0px 0px;
+      padding: 40px 30px 20px 30px; 
+  }
+
+  .project {
+      border: 1px solid orange;
+      padding: 30px;
+      margin: 30px;
+      border-radius: 20px;
+  }
+
+  .project a {
+      color: black;
+  }
+
+  .case-title {
+      margin-bottom: 80px;
+      padding-bottom: 60px;
+      min-height: 100px
+  }
+
+  .case-title h1 {
+      float: left;
+  }
+
+  .case-title h5 {
+      float: right;
+  }
