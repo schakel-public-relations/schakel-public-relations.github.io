@@ -19,7 +19,7 @@ export default class Layout extends React.Component {
         }
         `}
             render={
-                data => <div className='container'>
+                data => <div>
 
                     <nav className='navbar navbar-expand-sm my-navbar'>
 

@@ -16,7 +16,7 @@ export default class Index extends React.Component {
                 <div>
                     <div className='row'>
 
-                        <div className='col-md-6'>
+                        <div className='col-md-6 big-quote'>
 
                             <h1 className='schakel-theme xlg-text'>De Schakel tussen mens en maatschappij</h1>
                         </div>
@@ -34,11 +34,11 @@ export default class Index extends React.Component {
 
                     <div className='col-md-12'>
 
-                        <p className='about'>
+                        <div className='about'>
                             <h1 className='schakel-theme'>Wie zijn wij?</h1>
 
                             Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
-                        </p>
+                        </div>
 
                     </div>
 
@@ -129,14 +129,12 @@ export default class Index extends React.Component {
 
                     <div className='col-md-6'>
                         <div className='row socials'>
-                            <div className='col-md-6'>
-                                <h1>Instagram</h1>
+                            <div className='col-md-6'>                   
                                 <img height='auto' width='300px' className='img-fluid' alt='insta' src='https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png' />
 
                             </div>
 
                             <div className='col-md-6'>
-                                <h1>LinkedIn</h1>
                                 <img height='auto' width='300px' className='img-fluid' alt='link' src='https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png' />
 
                             </div>
@@ -181,11 +179,13 @@ export default class Index extends React.Component {
                         <div className='last-project'>
                             <h1>Laatste project</h1>
 
-                            <p>
+                            <div className='last-project-container'>
                                 <h3>Titel</h3>
+                                <p>
+                                    Some text this a nice project about the verification of the human race where we investigate the...
+                                </p>
+                            </div>
 
-                                Some text this a nice project about the verification of the human race where we investigate the...
-                            </p>
                         </div>
 
 

@@ -12,10 +12,10 @@ export default class Case extends React.Component {
     const post = this.props.data.markdownRemark
     return <Layout>
       <div>
-        <p className='case-title underline'>
+        <div className='case-title underline'>
           <h1>{post.frontmatter.title}</h1>
           <h5>Geschreven door <i>{post.frontmatter.author}</i> op <i>{post.frontmatter.date}</i></h5>
-        </p>
+        </div>
 
         <div className='post' dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
