@@ -14,6 +14,10 @@
     "deploy": "gatsby build && gh-pages -b master -d public"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.24",
+    "@fortawesome/free-brands-svg-icons": "^5.11.1",
+    "@fortawesome/free-solid-svg-icons": "^5.11.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "gatsby": "^2.15.14",
     "gatsby-image": "^2.2.18",
     "gatsby-plugin-react-helmet": "^3.1.7",
@@ -33,6 +37,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.1",
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
   },

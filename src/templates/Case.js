@@ -11,13 +11,16 @@ export default class Case extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     return <Layout>
-      <div>
-        <div className='case-title underline'>
-          <h1>{post.frontmatter.title}</h1>
-          <h5>Geschreven door <i>{post.frontmatter.author}</i> op <i>{post.frontmatter.date}</i></h5>
-        </div>
+      <div className='container'>
+        <div className='case'>
+          <div className='case-title underline'>
+            <h1>{post.frontmatter.title}</h1>
+            <h5>Geschreven door <i>{post.frontmatter.author}</i> op <i>{post.frontmatter.date}</i></h5>
+          </div>
 
-        <div className='post' dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div className='post' dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        </div>
       </div>
     </Layout>
   }

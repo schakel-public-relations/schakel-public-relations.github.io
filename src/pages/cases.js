@@ -12,7 +12,10 @@ export default class Cases extends React.Component {
         return <StaticQuery
             query={graphql`
         query GetAllCases {
-            allMarkdownRemark {
+            allMarkdownRemark(sort: {
+      fields: [frontmatter___date]
+      order: DESC
+      }) {
                 totalCount
                 edges {
                     node {
@@ -35,21 +38,25 @@ export default class Cases extends React.Component {
                 console.log(data)
                 return <Layout>
 
-                    <h1>Onze Cases</h1>
+                    <div className='container'>
+                        <h1>Onze Cases</h1>
 
-                    <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+                        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
 
-                    {data.allMarkdownRemark.edges.map(({ node }) => (
-                        <div className='row' key={node.id}>
-                            <div onClick={event => window.location.pathname = node.fields.slug} className='col-md-12 project'>
-                                <Link to={node.fields.slug}>
-                                    <h3>{node.frontmatter.title}</h3>
-                                    <h5>Geschreven door <b><i>{node.frontmatter.author}</i></b> op <b><i>{node.frontmatter.date}</i></b></h5>
-                                </Link>
-                                <p>{node.excerpt}</p>
+                        {data.allMarkdownRemark.edges.map(({ node }) => (
+                            <div className='row' key={node.id}>
+                                <div onClick={event => window.location.pathname = node.fields.slug} className='col-md-12 project'>
+                                    <Link to={node.fields.slug}>
+                                        <h3>{node.frontmatter.title}</h3>
+                                        <h5>Geschreven door <b><i>{node.frontmatter.author}</i></b> op <b><i>{node.frontmatter.date}</i></b></h5>
+                                    </Link>
+                                    <p>{node.excerpt}</p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+
+                    </div>
+
 
                 </Layout>
             }}

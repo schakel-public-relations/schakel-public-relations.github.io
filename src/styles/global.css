@@ -6,10 +6,11 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 .schakel-theme {
-    color: orange;
+    color: #ee771a;
 }
 
 .xlg-text {
@@ -30,7 +31,7 @@ body {
 }
 
 section {
-    margin-bottom: 500px;
+    margin-bottom: 100px;
 }
 
 .content {
@@ -50,12 +51,12 @@ section {
 }
 
 .nav-link {
-    color: black;
+    color: #181919;
     font-weight: bold;
 }
 .my-navbar {
-    border-bottom: 2px solid orange;
-    color: black;
+    border-bottom: 2px solid #ee771a;
+    color: #181919;
 }
 
 .my-navbar a {
@@ -68,13 +69,18 @@ section {
 
 /*Section styles*/
 .big-quote {
+    padding-top: 12%;
     text-align: center;
+    height: 500px;
+    background: no-repeat;
+    background-size: cover;
 }
 
 #about {
-    background-color: rgba(231, 229, 229, 0.479);
-    border-radius: 20px;
-    width: 100%;
+    background-color: #b2b2b1;
+    width: 60%;
+    min-width: 400px;
+    overflow: visible;
 }
 .about {
     /* border: 2px solid red; */
@@ -87,9 +93,7 @@ section {
 .my-modal {
     position: fixed;
     top: 0%;
-    
     width: 100%;
-    
 }
 
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -134,53 +138,74 @@ section {
   /* Style the front side (fallback if image is missing) */
   .flip-box-front {
     background-color: #bbb;
-    color: black;
+    color: #181919;
   }
   
   /* Style the back side */
   .flip-box-back {
-    background-color: dodgerblue;
+    background-color: #b2b2b1;
     color: white;
     transform: rotateY(180deg);
   }
 
-  .socials {
-       text-align: center;
+
+
+.socials {
+    cursor: pointer;
+    font-size: 2em;
+      margin-left: 50px;
+      text-decoration: none ;
+      color: white;
+  }
+
+  .contact-details {
+      font-size: 2em;
   }
 
   .contact-info {
-      background-color: black;
+      background-color: #181919;
       color: white;
       height: 100%;
       padding: 60px;
-      margin: 10px;
+      margin: 0px;
   }
 
   .underline {
-      border-bottom: 1px solid orange;
+      border-bottom: 1px solid #ee771a;
   }
 
   .our-work {
-      background-color: orange;
+      display: grid;
+      background-color: #ee771a;
       color: white;
       height: 100%;
       min-height: 300px;
-      margin-top: 80px;
-      padding: 60px; 
+      margin-top: 40px;
+      padding: 30px; 
+  }
+
+  .our-work h1 {
+      grid-row: 1;
+      grid-column: 1;
+  }
+
+  .our-work button {
+      grid-row: 10;
+      grid-column: 10;
   }
 
   .my-btn {
       text-decoration: none;
-      border: 1px solid black;
-      border-radius: 10px;
+      border: 1px solid white;
+      color: white;
       background-color: transparent;
       font-size: 2em;
+      width: 100px;
+      height: 50px;
   }
 
   .my-btn:hover {
-      background-color: rgb(250, 194, 91);
-      box-shadow: 5px 5px rgba(42, 41, 41, 0.76);
-      
+      background-color: #e78f4b;
   }
 
   .last-project {
@@ -188,28 +213,38 @@ section {
       color: white;
       height: 100%;
       min-height: 300px;
-      margin-top: 80px;
-      padding: 60px; 
+      margin-top: 40px;
+      padding: 30px; 
   }
 
 
   .last-project-container {
     border: 2px solid white;
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0px 10px 0px;
     padding: 40px 30px 20px 30px; 
-    border-radius: 20px;
   }
 
   .project {
-      border: 1px solid orange;
       padding: 30px;
       margin: 30px;
-      border-radius: 20px;
+      background-color: #181919;
+      color: white;
   }
 
   .project a {
-      color: black;
+      color: white;
+      text-decoration: none;
   }
+
+  .project a:hover {
+      color: #f09b5a; 
+  }
+
+.case { 
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 300px;
+}
 
   .case-title {
       margin-bottom: 80px;
@@ -223,4 +258,8 @@ section {
 
   .case-title h5 {
       float: right;
+  }
+
+  .pointer {
+      cursor: pointer;
   }
