@@ -45,7 +45,13 @@ export default class Index extends React.Component {
                 allMarkdownRemark(sort: {
                     fields: [frontmatter___date]
                     order: DESC
-                }) {
+                }
+                filter: {
+                  frontmatter:{
+                    title: {ne: "This is a hidden file"}
+                  }
+                }
+                ) {
                     totalCount
                     edges {
                         node {
@@ -97,7 +103,7 @@ export default class Index extends React.Component {
 
                     <section id='people'>
 
-                        <h1>Onze mensen</h1>
+                        <h1>Het team van {data.site.siteMetadata.title}</h1>
                         <div className='row'>
                             {data.site.siteMetadata.people.map(p => <div key={p.fullName} className='col-md-3'>
                                 <div className="card">
@@ -105,7 +111,7 @@ export default class Index extends React.Component {
                                         <img className="card-img" src={p.profilePictureFront} alt="Card" />
                                     </FlipBox>
                                     <div className="card-body">
-                                        <h4 className="card-title">{p.fullName}</h4>
+                                        <h5 className="card-title">{p.fullName}</h5>
                                         <p className="card-text">{p.description}</p>
                                     </div>
                                 </div>
@@ -163,10 +169,10 @@ export default class Index extends React.Component {
 
                                     {
                                         data.allMarkdownRemark.totalCount === 0 ? <div className='last-project-container'>
-                                            <h5 style={{textAlign: 'center'}}>Nog geen projecten</h5>
+                                            <h5 style={{textAlign: 'center', color: 'white'}}>Nog geen projecten</h5>
                                         </div>
                                             :
-                                            <div onClick={event => window.location = data.allMarkdownRemark.edges[0].node.fields.slug} className='last-project-container pointer'>
+                                            <div style={{textAlign: 'center', color: 'white'}} onClick={event => window.location = data.allMarkdownRemark.edges[0].node.fields.slug} className='last-project-container pointer'>
                                                 <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h3>
                                                 <i>Geschreven door {data.allMarkdownRemark.edges[0].node.frontmatter.author} op {data.allMarkdownRemark.edges[0].node.frontmatter.date}</i>
                                                 <p>

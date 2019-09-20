@@ -74,6 +74,7 @@ section {
     height: 500px;
     background: no-repeat;
     background-size: cover;
+    font-size: 200%;
 }
 
 #about {
@@ -101,14 +102,12 @@ section {
     background-color: transparent;
     width: 100%;
     height: 100%;
-    border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     padding-bottom: 100%;
   }
 
 .profile-img {
     width: 100%;
-    border-radius: calc(.25rem - 1px);
 }
 
 
@@ -159,7 +158,7 @@ section {
   }
 
   .contact-details {
-      font-size: 2em;
+      font-size: 200%;
   }
 
   .contact-info {
@@ -168,7 +167,21 @@ section {
       height: 100%;
       padding: 60px;
       margin: 0px;
+      min-height: 300px;
   }
+
+  .contact-info h1 {
+      color: white;
+      
+  }
+
+  .our-work h1 {
+    color: white;
+}
+
+.last-project h1 {
+    color: white;
+}
 
   .underline {
       border-bottom: 1px solid #ee771a;
