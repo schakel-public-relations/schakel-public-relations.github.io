@@ -43,6 +43,7 @@ section {
 
 /*navbar*/
 
+
 .img-logo {
     max-width: 100%;
     height: auto;
@@ -51,9 +52,15 @@ section {
 }
 
 .nav-link {
+    text-decoration: none;
     color: #181919;
     font-weight: bold;
 }
+
+.navbar-item :hover {
+    color: #ee771a;
+}
+
 .my-navbar {
     border-bottom: 2px solid #ee771a;
     color: #181919;
@@ -275,4 +282,16 @@ section {
 
   .pointer {
       cursor: pointer;
+  }
+
+  .scroll-top {
+      background-color: #ee771a;
+      border: none;
+      height: 60px;
+      width: 80px;
+      font-size: 2em;
+      text-align: center;
+      bottom: 0;
+      position: sticky;
+      margin-left: 90%;
   }

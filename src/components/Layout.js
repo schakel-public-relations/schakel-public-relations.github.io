@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
+//import ScrollBackToTopButton from './ScrollBackToTopButton'
 
 export default class Layout extends React.Component {
     constructor(props) {
@@ -31,7 +32,7 @@ export default class Layout extends React.Component {
                                 <Link className='nav-link' to='/cases/'>Cases</Link>
                             </li>
                             <li className='navbar-item'>
-                                <Link className='nav-link' to='/#people'>Onze mensen</Link>
+                                <Link className='nav-link' to='/#people'>Het team van {data.site.siteMetadata.title}</Link>
                             </li>
                             <li className='navbar-item'>
                                 <Link className='nav-link' to='/#contact'>Contact</Link>
@@ -48,6 +49,8 @@ export default class Layout extends React.Component {
                     <div className='content'>
                         {this.props.children}
                     </div>
+
+                    {/* WORK IN PROGRESS<ScrollBackToTopButton/> */}
 
                 </div>
             }
