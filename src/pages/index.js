@@ -6,6 +6,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import Modal from "../components/Modal"
 
 library.add(faArrowRight)
 library.add(faLinkedin)
@@ -105,6 +106,8 @@ export default class Index extends React.Component {
     <br/><br/>
     <b>Wij geloven in de kracht van onszelf als mensen. Persoonlijk contact is dan ook onze key.</b>
     <br/><br/>
+
+    <Modal openText='Lees meer'>
     Wij creëren persoonlijke verhalen en content door middel van verschillende strategieën die merk en mens
     met elkaar verbinden. Wij bouwen relaties op met klanten op basis van vertrouwen en zullen gedreven
     aan de slag gaan met het vinden van de juiste oplossing. Schakel Public Relations richt zich op bedrijven
@@ -126,6 +129,8 @@ export default class Index extends React.Component {
     <br/><br/>
     Schakel Public Relations is het menselijkSTE pr-bureau omdat zij zich focussen op het verbinden van pr
     aan menselijke eigenschappen.
+    </Modal>
+
                                     </p>
                                 </div>
 
