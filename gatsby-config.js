@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         fullName: 'Sophie Klein',
-        description: 'Context Manager', 
+        description: 'Content Manager', 
         extraInfo: 'nvt',
         profilePictureFront: 'sophie2.jpg',
         profilePictureBack: 'sophie3.jpg',
