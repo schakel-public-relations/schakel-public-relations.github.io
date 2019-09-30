@@ -1,1 +1,0 @@
-{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/hidden/"},"id":"8edc329a-95a1-549c-ab71-e958da36bdd2","frontmatter":{"title":"This is a hidden file","author":"Steven K","date":"20-09-2019"},"excerpt":"This is a hidden file If you see it then there is a bug in the local gatsby backend. Go fix it and make this file disapear!"}}]}}}
