@@ -20,7 +20,7 @@ Maar het ergste vind ik nog wel als je de trein ingaat. Zodra de deuren opengaan
 stappen, is het dringen geblazen. Mensen die voor je staan met gigantische rugzakken beuken tegen
 je aan, waardoor je met je neus in hun tas komt en kan ruiken wat er in hun lunchpakketje zit. 
 
-![alt](./tbel-abuseridze-L8x4idF0yyM-unsplash.jpg)
+![alt](./t.jpg)
 
 En eenmaal in de coupe elke keer weer heel ongemakkelijk bij een stoel langzaam je rugzak afdoen,
 zodat de persoon die naast je zit opkijkt en snel zijn tas weghaalt zodat je kan zitten. Ja, zitten moest
