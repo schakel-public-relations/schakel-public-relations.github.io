@@ -247,8 +247,9 @@ section {
   .project {
       padding: 30px;
       margin: 30px;
-      background-color: #181919;
+      background-color: #a5aaaa;
       color: white;
+      border: 1px solid black;
   }
 
   .project a {

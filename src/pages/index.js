@@ -45,7 +45,7 @@ export default class Index extends React.Component {
                 }
                 allMarkdownRemark(sort: {
                     fields: [frontmatter___date]
-                    order: DESC
+                    order: ASC
                 }
                 filter: {
                   frontmatter:{

@@ -14,7 +14,7 @@ export default class Cases extends React.Component {
         query GetAllCases {
             allMarkdownRemark(sort: {
       fields: [frontmatter___date]
-      order: DESC
+      order: ASC
       }
       filter: {
                   frontmatter:{
